@@ -9,9 +9,9 @@ import Foundation
 import PDFKit
 //import Tabular
 //import Docx
-//class Tools {
-//    func pdfToTable(_ pdfPath :String, tablePath: inout String) throws {
-//        
+class CDCovertTools {
+    static func pdfToTable(_ pdfPath :String, tablePath: inout String) {
+        
 //        guard let pdfDoc = PDFDocument(url: pdfPath.pathUrl) else { return }
 //        // Create table
 //        let table = Table()
@@ -26,16 +26,16 @@ import PDFKit
 //                for column in row {
 //                    let tableCell = TableCell(text:column)
 //                    tableRow.addCell(tableCell)
-//                    
+//
 //                }
 //                table.addRow(tableRow)
 //            }
 //        }
 //        try table.saveAsCSV(to: csvURL)
-//    }
-//    
-//    func pdfToWord(_ pdfPath :String, docPath: inout String) throws {
-//        // Load PDF document
+    }
+    
+    static func pdfToWord(_ pdfPath :String, docPath: inout String) throws {
+        // Load PDF document
 //        guard let pdfDoc = PDFDocument(url: pdfPath.pathUrl)else { return }
 //        // Create Word document
 //        let doc = Docx()
@@ -49,49 +49,58 @@ import PDFKit
 //            paragraph.addImage(image)
 //        }
 //        try doc.save(to: docPath.pathUrl)
-//
-//    }
-//    
-//    func tableToPdf(_ tablePath: String, pdfPath: inout String) {
+
+    }
+    
+    static func tableToPdf(_ tablePath: String, pdfPath: inout String) {
 //        guard let table = try? Table(csvURL: tablePath.pathUrl) else { return }
 //        let pdfDoc = PDFDocument()
 //        let pdfTable = PDFTable(table:table)
 //        pdfTable.draw(in: pdfDoc)
 //        pdfDoc.write(to: pdfPath.pathUrl)
-//    }
-//    
-//    func docsToPdf(_ docPath:String, pdfPath: inout String) {
-////        guard let doc = try? Docx(fileURL: docPath.pathUrl) else { return }
-////        let pdfDoc = PDFDocument()
-////        for paragraph in doc.paragraphs {
-////            // Add paragraph text to PDF document
-////            let pdfPage = PDFPage()
-////            pdfPage.addAnnotation(PDFAnnotation(bounds:CGRect(x: 0, y: 0, width: CDSCREEN_WIDTH, height: CDSCREEN_HEIGTH),forType: .text,withProperties: nil))
-//////            pdfPage.dr
-////            pdfPage.draw(with: .text，for: CGRect(x: e, y: 0, width: CDSCREEN_WIDTH, height: CDSCREEN_HEIGTH), withAttributes:[NSAttributedstring.Key.font: UIFont.systemFont(ofSize: 12)],andOptions: nil)
-////            pdfDoc.insert(pdfPage，at: pdfDoc.pageCount)
-////        }
-////        pdfDoc.write(to: pdfPath.pathUrl)
-//    }
-//    
-//    func imageToPdf(image: UIImage, pdfPath:inout String) {
-//        let pdfData = NSMutableData()
-//        let pdfBounds = CGRect(x: 0,y: 0, width: image.size.width, height: image.size.height)
-//        UIGraphicsBeginPDFContextToData(pdfData，pdfBounds,nil)
-//        // Add image to PDF context
-//        UIGraphicsBeginPDFPage()
-//        image.draw(in: pdfBounds)
-//        UIGraphicsEndPDFContext()
-//        let pdfURL = String.RootPath.appendingPathComponent(str: "example.pdf").pathUrl
-//        pdfData.write(to:pdfURL,atomically:true)
-//    }
-//    
-//    func pdfToImage(pdfPath: String, imagePath:inout String) {
+    }
+    
+    static func docsToPdf(_ docPath:String, pdfPath: inout String) {
+//        guard let doc = try? Docx(fileURL: docPath.pathUrl) else { return }
+//        let pdfDoc = PDFDocument()
+//        for paragraph in doc.paragraphs {
+//            // Add paragraph text to PDF document
+//            let pdfPage = PDFPage()
+//            pdfPage.addAnnotation(PDFAnnotation(bounds:CGRect(x: 0, y: 0, width: CDSCREEN_WIDTH, height: CDSCREEN_HEIGTH),forType: .text,withProperties: nil))
+////            pdfPage.dr
+//            pdfPage.draw(with: .text，for: CGRect(x: e, y: 0, width: CDSCREEN_WIDTH, height: CDSCREEN_HEIGTH), withAttributes:[NSAttributedstring.Key.font: UIFont.systemFont(ofSize: 12)],andOptions: nil)
+//            pdfDoc.insert(pdfPage，at: pdfDoc.pageCount)
+//        }
+//        pdfDoc.write(to: pdfPath.pathUrl)
+    }
+ 
+    static func imageToPdf(images: [UIImage], pdfPath:inout String) {
+       let pdfDoc = PDFDocument()
+        for image in images {
+            guard let pdfPage = PDFPage(image: image) else {
+                continue
+            }
+            pdfDoc.insert(pdfPage, at: pdfDoc.pageCount)
+        }
+        guard let pdfData = pdfDoc.dataRepresentation() else {
+            CDHUDManager.shared.showFail("Covert to pdf fail!")
+            return
+        }
+        let pdfURL = pdfPath.pathUrl
+        do {
+            try pdfData.write(to: pdfURL)
+        } catch {
+            CDHUDManager.shared.showFail("Covert to pdf fail!")
+            CDPrintManager.log("Covert to pdf fail:\(error.localizedDescription)", type: .ErrorLog)
+        }
+    }
+    
+    static func pdfToImage(pdfPath: String, imagePath:inout String) {
 //        guard let pdfDoc = PDFDocument(url: pdfPath.pathUrl) else { return }
 //        guard let page = pdfDoc.page(at: 0) else { return }
 //        // Get image representation of PDF page
 //        let image = page.thumbnail(of: casize(width: page.bounds.width, height: page.bounds.height), for: .cropBox)
 //        try image.pngData()?.write(to: imagePath.pathUrl)
 //        CDPrintManager.log("pdf -> image success", type: .InfoLog)
-//    }
-//}
+    }
+}

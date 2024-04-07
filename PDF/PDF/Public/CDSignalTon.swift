@@ -66,7 +66,7 @@ class CDSignalTon: NSObject {
             
     }
 
-    func saveFileWithUrl(fileUrl: URL, folderInfo: CDSafeFileInfo) {
+    func saveFileWithUrl(fileUrl: URL, folderInfo: CDSafeFileInfo?) {
         let tmpFilePath = fileUrl.absoluteString
         let fileName = tmpFilePath.fileName
         let suffix = tmpFilePath.suffix
@@ -87,31 +87,34 @@ class CDSignalTon: NSObject {
             try! FileManager.default.removeItem(atPath: tmpFilePath)
         }
 
-//        let fileType = suffix.fileType
+        let superId = folderInfo == nil ? ROOTSUPERID : folderInfo!.selfId
+        let folderPath = folderInfo == nil ? String.RootPath() : folderInfo!.path.absolutePath
         let currentTime = GetTimestamp()
         let fileInfo = CDSafeFileInfo()
-        fileInfo.superId = folderInfo.selfId
+        fileInfo.superId = superId
         fileInfo.userId = FIRSTUSERID
         fileInfo.name = fileName
         fileInfo.type = .file
         var filePath: String!
 
-        filePath = folderInfo.path.absolutePath.appendingPathComponent(str: "\(currentTime).\(suffix)")
         do {
+            filePath = folderPath.appendingPathComponent(str: "\(currentTime).\(suffix)")
             try contentData.write(to: filePath.pathUrl)
         } catch {
             print("save file error:\(error)")
         }
-        let thumbPath = folderInfo.path.absolutePath.thumpPath.appendingPathComponent(str: "\(currentTime).\(suffix)")
-        let image = UIImage.previewImage(videoUrl: filePath.pathUrl)
-        let data = image?.jpegData(compressionQuality: 0.5)
-        do {
-            try data?.write(to: thumbPath.pathUrl)
-        } catch {
-            CDPrintManager.log("save Midea error:", type: .ErrorLog)
+        if suffix.isImage {
+            let thumbPath = folderPath.thumpPath.appendingPathComponent(str: "\(currentTime).\(suffix)")
+            let image = UIImage.previewImage(videoUrl: filePath.pathUrl)
+            let data = image?.jpegData(compressionQuality: 0.5)
+            do {
+                try data?.write(to: thumbPath.pathUrl)
+            } catch {
+                CDPrintManager.log("save Midea error:", type: .ErrorLog)
+            }
+            fileInfo.thumbPath = thumbPath.relativePath
         }
         
-        fileInfo.thumbPath = thumbPath.relativePath
         let fileAttribute = filePath.fileAttribute
         fileInfo.size = fileAttribute.fileSize
         fileInfo.createTime = fileAttribute.createTime

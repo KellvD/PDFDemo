@@ -229,6 +229,9 @@ extension String {
             return string!
         }
     }
-
+    var isImage: Bool {
+        let tmp = self.uppercased()
+        return ["PNG", "JPG", "HEIC", "JPEG", "BMP", "TIF", "PCD", "MAC", "PCX", "DXF", "CDR"].contains(tmp)
+    }
 }
 

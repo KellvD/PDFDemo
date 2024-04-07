@@ -115,10 +115,7 @@ UICollectionViewDelegateFlowLayout {
     
     @objc func refreshDBData() {
         dataArr = CDSqlManager.shared.queryAllFileFromFolder(superId: ROOTSUPERID)
-        for _ in 0..<8 {
-            let file = CDSafeFileInfo()
-            dataArr.append(file)
-        }
+        
         collectionView.reloadData()
     }
     
@@ -385,20 +382,20 @@ UICollectionViewDelegateFlowLayout {
 //            return
 //        }
         
-        let documentTypes = ["public.text", "com.adobe.pdf", "com.microsoft.word.doc", "com.microsoft.excel.xls", "com.microsoft.powerpoint.ppt", "public.data"]
-//        super.tmpFolderInfo = folder
-        super.docuemntPickerComplete = {[weak self](_ success: Bool) -> Void in
-            guard let self = self else {
-                return
-            }
-            if success {
-//                self.refreshData()
-                if CDSignalTon.shared.vipType == .not && flag < 2{
-                    CDConfigFile.setIntValueToConfigWith(key: .libraryFree_docment, intValue: flag + 1)
-                }
-            }
-        }
-        presentDocumentPicker(documentTypes: documentTypes)
+//        let documentTypes = ["public.text", "com.adobe.pdf", "com.microsoft.word.doc", "com.microsoft.excel.xls", "com.microsoft.powerpoint.ppt", "public.data"]
+////        super.tmpFolderInfo = folder
+//        super.docuemntPickerComplete = {[weak self](_ success: Bool) -> Void in
+//            guard let self = self else {
+//                return
+//            }
+//            if success {
+////                self.refreshData()
+//                if CDSignalTon.shared.vipType == .not && flag < 2{
+//                    CDConfigFile.setIntValueToConfigWith(key: .libraryFree_docment, intValue: flag + 1)
+//                }
+//            }
+//        }
+//        presentDocumentPicker(documentTypes: documentTypes)
     }
 }
 

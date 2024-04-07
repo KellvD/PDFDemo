@@ -19,6 +19,11 @@ class CDSafeFileInfo: NSObject {
         case folder
         case file
     }
+    
+    enum NSFileType: Int {
+        case pdf = 0
+        case image = 1
+    }
     var selfId = Int()
     var superId = Int()
     var size = Int()

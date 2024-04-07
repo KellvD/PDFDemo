@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ZLPhotoBrowser
 
 class CDToolsViewController: CDBaseAllViewController, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource {
     private var dataArr:[[CDToolOption]] = [
@@ -103,18 +104,42 @@ class CDToolsViewController: CDBaseAllViewController, UICollectionViewDelegate,U
             break
         case .qrCode:
             break
-        case .pdfToDocx:
-            break
-        case .pdfToTab:
-            break
-        case .pdfToImage:
-            break
+        case .pdfToDocx,.pdfToTab,.pdfToImage:
+            
+            super.presentDocumentPicker(documentTypes: ["com.adobe.pdf"]) { fileUrl in
+                let currentTime = GetTimestamp()
+                var resultPath = ""
+                if mode == .pdfToDocx {
+                    resultPath = String.RootPath().appendingPathComponent(str: "Tmp_\(currentTime).doc")
+                    CDCovertTools.tableToPdf(fileUrl.absoluteString, pdfPath: &resultPath)
+
+                } else if mode == .pdfToTab {
+                    resultPath = String.RootPath().appendingPathComponent(str: "Tmp_\(currentTime).pdf")
+                    CDCovertTools.pdfToTable(fileUrl.absoluteString, tablePath: &resultPath)
+                }else if mode == .pdfToImage {
+                    resultPath = String.RootPath().appendingPathComponent(str: "Tmp_\(currentTime).png")
+                    CDCovertTools.pdfToImage(pdfPath: fileUrl.absoluteString, imagePath: &resultPath)
+                }
+                
+                CDSignalTon.shared.saveFileWithUrl(fileUrl: resultPath.pathUrl, folderInfo: nil)
+            }
         case .docxToPdf:
-            break
+            super.presentDocumentPicker(documentTypes: ["com.microsoft.word.doc"]) { fileUrl in
+//                let currentTime = GetTimestamp()
+//                var pdfPath = String.RootPath().appendingPathComponent(str: "\Tmp_\(currentTime).pdf")
+//                CDCovertTools.imageToPdf(images: images, pdfPath: &pdfPath)
+//
+//                CDSignalTon.shared.saveFileWithUrl(fileUrl: pdfPath.pathUrl, folderInfo: nil)
+            }
         case .tabToPdf:
-            break
+            super.presentDocumentPicker(documentTypes: ["com.microsoft.excel.xls"]) { fileUrl in
+                let currentTime = GetTimestamp()
+                var pdfPath = String.RootPath().appendingPathComponent(str: "Tmp_\(currentTime).pdf")
+                CDCovertTools.tableToPdf(fileUrl.absoluteString, pdfPath: &pdfPath)
+                
+            }
         case .imageToPdf:
-            break
+            addFromPhoto()
         case .signature:
             break
         case .textEditor:
@@ -125,17 +150,65 @@ class CDToolsViewController: CDBaseAllViewController, UICollectionViewDelegate,U
             break
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func addFromPhoto() {
+        CDAuthorizationTools.checkPermission(type: .library, presentVC: self) {[weak self] flag, message in
+            guard let self = self else {
+                return
+            }
+            if flag {
+                DispatchQueue.main.async {
+                    
+                    let config = ZLPhotoConfiguration.default()
+                    config.allowEditVideo = false
+                    config.allowEditImage = false
+                    config.maxSelectVideoDuration = 60 * 60
+                    config.allowSelectImage = true
+                    config.allowSelectVideo = false
+                    config.allowTakePhotoInLibrary = false
+                    config.allowPreviewPhotos = false
+                    config.maxSelectCount = 10000
+                    
+                    
+                    let uiconfig = ZLPhotoUIConfiguration.default()
+                    uiconfig.showAddPhotoButton = false
+                    let ps = ZLPhotoPreviewSheet()
+                    
+                    ps.selectImageBlock = {  results, isOriginal in
+                        DispatchQueue.global().async {
+                            var images:[UIImage] = []
+                            for model in results {
+                                images.append(model.image)
+                            }
+                            let currentTime = GetTimestamp()
+                            var pdfPath = String.RootPath().appendingPathComponent(str: "\(currentTime).pdf")
+                            CDCovertTools.imageToPdf(images: images, pdfPath: &pdfPath)
+                            
+                            CDSignalTon.shared.saveFileWithUrl(fileUrl: pdfPath.pathUrl, folderInfo: nil)
+                            
+                        }
+                    }
+                        
+                    ps.showPhotoLibrary(sender: self)
+                }
+            }
+        }
     }
-    */
 
+   
 }
+extension CDToolsViewController: UIDocumentInteractionControllerDelegate {
+    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
+        return self
+    }
+    func documentInteractionControllerRectForPreview(_ controller: UIDocumentInteractionController) -> CGRect {
+        return self.view.frame
+    }
+    func documentInteractionControllerViewForPreview(_ controller: UIDocumentInteractionController) -> UIView? {
+        return self.view
+    }
+}
+
 
 class CDToolsHeaderView: UICollectionReusableView {
     var titleLabel: UILabel!

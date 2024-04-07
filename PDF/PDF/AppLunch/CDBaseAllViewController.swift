@@ -12,7 +12,7 @@ import SnapKit
 //import GoogleMobileAds
 
 extension CDBaseAllViewController {
-    public typealias CDDocumentPickerCompleteHandler = (_ success: Bool) -> Void
+    public typealias CDDocumentPickerCompleteHandler = (_ fileUrl: URL) -> Void
 }
 
 class CDBaseAllViewController:
@@ -76,26 +76,26 @@ UIViewController, UIGestureRecognizerDelegate, UIDocumentPickerDelegate {
         return true
     }
 
-    func presentDocumentPicker(documentTypes: [String]) {
+    func presentDocumentPicker(documentTypes: [String], complete: @escaping CDDocumentPickerCompleteHandler) {
 //        UIDocumentPickerViewController
+        self.docuemntPickerComplete = complete
         let documentPicker = UIDocumentPickerViewController(documentTypes: documentTypes, in: .open)
         documentPicker.delegate = self
         documentPicker.modalPresentationStyle = .fullScreen
         if #available(iOS 11, *) {
-            documentPicker.allowsMultipleSelection = true
+            documentPicker.allowsMultipleSelection = false
         }
         CDSignalTon.shared.customPickerView = documentPicker
         self.present(documentPicker, animated: true, completion: nil)
     }
 
     // MARK: UIDocumentPickerDelegate
-    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL], handler: @escaping((URL)->Void)) {
         CDSignalTon.shared.customPickerView = nil
         var index = 0
         var errorArr: [String] = []
         func handleAllDocumentPickerFiles(urlArr: [URL]) {
             DispatchQueue.global().async {
-                var tmpUrlArr = urlArr
                 if urlArr.count > 0 {
                     index += 1
                     let subUrl = urlArr.first!
@@ -104,33 +104,12 @@ UIViewController, UIGestureRecognizerDelegate, UIDocumentPickerDelegate {
                         let fileCoordinator = NSFileCoordinator()
 
                         fileCoordinator.coordinate(readingItemAt: subUrl, options: [], error: nil) {[weak self] (newUrl) in
-                            guard let self = self else {
+                            guard let self = self,
+                                  let docuemntPickerComplete = self.docuemntPickerComplete else {
                                 return
                             }
-                            do {
-                                let fileSize = try Data(contentsOf: newUrl).count
-                                if fileSize > getDiskSpace().free {
-                                    DispatchQueue.main.async {
-                                        self.alertSpaceWarn()
-                                        CDHUDManager.shared.hideProgress()
-                                        return
-                                    }
-                                } else {
-                                    CDSignalTon.shared.saveFileWithUrl(fileUrl: newUrl, folderInfo: self.tmpFolderInfo)
-                                    tmpUrlArr.removeFirst()
-                                    handleAllDocumentPickerFiles(urlArr: tmpUrlArr)
-                                }
-                            } catch {
-                                errorArr.append(subUrl.absoluteString)
-                                CDPrintManager.log("文件导入失败:\(error.localizedDescription)", type: .ErrorLog)
-                                tmpUrlArr.removeFirst()
-                                handleAllDocumentPickerFiles(urlArr: tmpUrlArr)
-                                return
-                            }
+                            docuemntPickerComplete(newUrl)
                         }
-                    }
-                    DispatchQueue.main.async {
-                        CDHUDManager.shared.updateProgress(num: Float(index)/Float(urls.count), text: "\(index)/\(urls.count)")
                     }
                 } else {
                     DispatchQueue.main.async {
@@ -140,8 +119,7 @@ UIViewController, UIGestureRecognizerDelegate, UIDocumentPickerDelegate {
                         } else {
                             CDHUDManager.shared.showComplete("A part of files import faulure")
                         }
-
-                        self.docuemntPickerComplete?(true)
+                        
                     }
                 }
             }
