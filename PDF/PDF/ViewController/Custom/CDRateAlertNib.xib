@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CDRateAlertNib" customModule="PDF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel about using Scanner APP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hje-Ff-KJx">
+                    <rect key="frame" x="16" y="83" width="361" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihn-IJ-nih">
+                    <rect key="frame" x="16" y="127.33333333333331" width="176.66666666666666" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="fTb-9k-aq8"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Too Bab" image="popup_bad"/>
+                    <connections>
+                        <action selector="onBadAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="WS9-Zd-dj3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95w-ZC-e0w">
+                    <rect key="frame" x="200.66666666666663" y="127.33333333333331" width="176.33333333333337" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="W6w-SV-lqh"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Good" image="popup_good"/>
+                    <connections>
+                        <action selector="onGoodAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="KdY-Lr-UZ2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ihn-IJ-nih" firstAttribute="top" secondItem="Hje-Ff-KJx" secondAttribute="bottom" constant="24" id="5iP-Ts-ghm"/>
+                <constraint firstItem="95w-ZC-e0w" firstAttribute="top" secondItem="Hje-Ff-KJx" secondAttribute="bottom" constant="24" id="IZH-ec-4N9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="95w-ZC-e0w" secondAttribute="trailing" constant="16" id="TVD-7Q-XyW"/>
+                <constraint firstItem="95w-ZC-e0w" firstAttribute="leading" secondItem="ihn-IJ-nih" secondAttribute="trailing" constant="8" id="WSi-NH-TeT"/>
+                <constraint firstItem="Hje-Ff-KJx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="XrG-Bs-5Kb"/>
+                <constraint firstItem="ihn-IJ-nih" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bFE-RU-PrB"/>
+                <constraint firstItem="95w-ZC-e0w" firstAttribute="width" secondItem="ihn-IJ-nih" secondAttribute="width" id="eWA-h1-0IQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hje-Ff-KJx" secondAttribute="trailing" constant="16" id="gcA-E4-vIn"/>
+                <constraint firstItem="Hje-Ff-KJx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="qXA-yD-chz"/>
+            </constraints>
+            <connections>
+                <outlet property="badBtn" destination="ihn-IJ-nih" id="b20-zn-oP6"/>
+                <outlet property="goodBtn" destination="95w-ZC-e0w" id="9bb-iq-rBo"/>
+                <outlet property="titlleLabel" destination="Hje-Ff-KJx" id="ibG-ED-QWc"/>
+            </connections>
+            <point key="canvasLocation" x="95" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_bad" width="32.333332061767578" height="32"/>
+        <image name="popup_good" width="32.333332061767578" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

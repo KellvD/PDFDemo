@@ -1,0 +1,48 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.8)
+  - SignatureView (1.1.0)
+  - SnapKit (5.7.1)
+  - SQLite.swift (0.14.1):
+    - SQLite.swift/standard (= 0.14.1)
+  - SQLite.swift/standard (0.14.1)
+  - SwiftyJSON (5.0.1)
+  - SwiftyStoreKit (0.16.1)
+  - ZLPhotoBrowser (4.5.0):
+    - ZLPhotoBrowser/Core (= 4.5.0)
+  - ZLPhotoBrowser/Core (4.5.0)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - MJRefresh
+  - SignatureView
+  - SnapKit
+  - SQLite.swift
+  - SwiftyJSON
+  - SwiftyStoreKit
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+    - MJRefresh
+    - SignatureView
+    - SnapKit
+    - SQLite.swift
+    - SwiftyJSON
+    - SwiftyStoreKit
+    - ZLPhotoBrowser
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 4e6e7ba77a6d5fab012426777e32b0a77127c50a
+  SignatureView: 23bb085add66110062decbfa899ed93d111b76e5
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  ZLPhotoBrowser: 5148db17b3a7dff068604cd7fc46d0462d92e07c
+
+PODFILE CHECKSUM: 226337a89ac067a2d94d889c758dece78ba34d1e
+
+COCOAPODS: 1.15.2
