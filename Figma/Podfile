@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Figma' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+	pod 'MBProgressHUD'
+	pod 'SnapKit'
+	pod 'SQLite.swift'
+	pod 'MJRefresh'
+  pod 'SwiftSoup'
+  pod 'JXSegmentedView'
+  pod 'ZLPhotoBrowser'
+  pod 'SwiftyStoreKit'
+  pod 'SwiftyJSON'
+  pod 'FirebaseAnalytics'
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'FacebookSDK'
+end

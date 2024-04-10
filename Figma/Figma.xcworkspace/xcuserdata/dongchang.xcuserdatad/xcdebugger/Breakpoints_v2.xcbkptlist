@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "494AA612-861A-4209-937F-B4E42103B2EA"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B775EC54-D632-47A1-9FD4-F4273201D8EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Media/File/CDFolderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "325"
+            endingLineNumber = "325"
+            landmarkName = "deleteBarItemClick(folder:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55DDAD5A-489F-4B22-86E0-96C4FF88045F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Media/Media/CDMediaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "523"
+            endingLineNumber = "523"
+            landmarkName = "putBackItemClick()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CE8A357-8B80-4ED5-944A-7A10209FD651"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ThirdParts/sqlManger/CDSqlManager+CDSafeFileInfo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "updateOneSafeFileLifeCircle(with:fileId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59FCBC2E-043A-4F2B-80D6-7D498801A6BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/PublicViews/File+Alert.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "showAlert(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B16C5D0C-BADB-45FD-955B-36E0B6CABEEB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/PublicViews/BuyManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "restore(comp:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DC461EB-D5C6-48A5-9DE7-DC9E0BE6F200"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ThirdParts/sqlManger/CDSqlManager+CDSafeFolder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "createSafeFoldeTab()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE9A066E-439F-4267-90EF-9B7AD291B364"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/PublicViews/NKIAPManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "verifyReceipt(service:isRestor:product_id:complete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC6E0800-374C-4553-A348-0E25BAA9238F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/PublicViews/NKIAPManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "verifyReceipt(service:isRestor:product_id:complete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D662F579-A6E7-4F7A-9061-7103819CC9B9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/PublicViews/NKIAPManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "verifyReceipt(service:isRestor:product_id:complete:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6373BB8D-33A7-4E73-90A1-88CD648A8BED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Mine/CDVipViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "onSubscribeNow()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C97636E-E46C-415D-917D-07952CD40320"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/AppleLunch/CDBaseAllViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
+            landmarkName = "adDidDismissFullScreenContent(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D36237AB-D5D3-4E00-8C7E-DA10462EFE32"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Web/CDWebPreviewViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BF15AB4-8C7D-4781-B96E-39CCA1E2E481"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/File/CDNewFileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "delete()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3DEF7AE-1B6B-4C9D-962B-53D9D675A361"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/File/CDNewFileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "deleteBarItemClick()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28F59614-E35D-4023-A218-172791838BCC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Media/CDMediaScrollerViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "putBack()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/AppleLunch/CDBaseAllViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
+            landmarkName = "guidedPayment(complete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - d9f1b9ae9f8c55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDMediaViewController.deleteBarItemClick() -&gt; (), Argument Types : [Hide_photos___videos.CDMediaViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - 43505851318ac841"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDMediaViewController.putBackItemClick() -&gt; (), Argument Types : [Hide_photos___videos.CDMediaViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - a5a034786b274a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDWebPreviewViewController.addActtion() -&gt; (), Argument Types : [Hide_photos___videos.CDWebPreviewViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - ec70c3ce5b933906"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed, Arg[2] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in closure #1 (__C.UIAlertAction) -&gt; () in Hide_photos___videos.CDMediaScrollerViewController.putBackItemClick() -&gt; (), Argument Types : [Hide_photos___videos.CDSafeFileInfoHide_photos___videos.CDMediaScrollerViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "166">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - b6356ba75b8da70a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed, Arg[2] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in deleteTheSelectImage #1 () -&gt; () in Hide_photos___videos.CDMediaScrollerViewController.deleteBarItemClick() -&gt; (), Argument Types : [Hide_photos___videos.CDSafeFileInfoHide_photos___videos.CDMediaScrollerViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - 68b5037d824a684d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDWebViewController.addPageAction() -&gt; (), Argument Types : [Hide_photos___videos.CDWebViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - cbada8bb132b54ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed, Arg[2] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in closure #1 (__C.UIAlertAction) -&gt; () in Hide_photos___videos.CDNewFileViewController.deleteBarItemClick() -&gt; (), Argument Types : [Hide_photos___videos.CDSafeFileInfoHide_photos___videos.CDNewFileViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "250">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - c88bc50d5e50e5ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDFilesViewController.(deleteBarItemClick in _7266740AFE6A8F3F10280A69A80A1F14)() -&gt; (), Argument Types : [Hide_photos___videos.CDFilesViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - 6f79bcbc5960bc3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDFilesViewController.(putBackItemClick in _7266740AFE6A8F3F10280A69A80A1F14)() -&gt; (), Argument Types : [Hide_photos___videos.CDFilesViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "8264AE1A-FA36-40BC-8DCE-463E0A42747B - b86ab40f56582e73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of function signature specialization &lt;Arg[0] = [Closure Propagated : closure #1 () -&gt; () in Hide_photos___videos.CDWebPageViewController.addAction() -&gt; (), Argument Types : [Hide_photos___videos.CDWebPageViewController]&gt; of Hide_photos___videos.CDBaseAllViewController.guidedPayment(complete: () -&gt; ()) -&gt; ()"
+                  moduleName = "Hide photos &amp; videos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dongchang/Desktop/Project/Figma/Figma/Figma/AppleLunch/CDBaseAllViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "267"
+                  endingLineNumber = "267"
+                  offsetFromSymbolStart = "133">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DAA36FD-E4A8-4F66-B2A7-09D845C9A030"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/AppleLunch/CDAppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "application(_:open:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0EB75D5-646F-4F0F-9552-053EFBA2D2CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Web/CDWebPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
+            landmarkName = "webView(_:didFinish:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57311A8F-5C97-4CA0-A2EC-342996AB53F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Web/CDWebPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
+            landmarkName = "webView(_:didFinish:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CCEBD49-59E8-49E7-8B2A-52EB182177DF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Mine/CDMineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "setFaceIdClick()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F840CC39-BB89-4B13-8461-4DF0D624BBF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Figma/ViewController/Mine/CDMineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "setFaceIdClick()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "3B3AB6BB-2498-46BE-9983-6A6661A33427"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

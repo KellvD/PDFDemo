@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CDWebPageCell" customModule="Figma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="194"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3M-0F-U2G">
+                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NmB-9v-Rni"/>
+                            <constraint firstAttribute="width" constant="20" id="q8V-Gn-xll"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram Po..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXm-lg-5hA">
+                        <rect key="frame" x="38" y="9.6666666666666643" width="82" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XT-Zv-Xiw">
+                        <rect key="frame" x="133" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="7dm-mi-z2J"/>
+                            <constraint firstAttribute="height" constant="20" id="eqA-mI-zk0"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="关闭"/>
+                        <connections>
+                            <action selector="closePageAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Srz-cT-vqF"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIg-ex-oXp">
+                        <rect key="frame" x="0.0" y="40" width="163" height="154"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TIg-ex-oXp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="3pD-HY-NPI"/>
+                <constraint firstAttribute="trailing" secondItem="TIg-ex-oXp" secondAttribute="trailing" id="6aN-Ox-Z3t"/>
+                <constraint firstAttribute="trailing" secondItem="7XT-Zv-Xiw" secondAttribute="trailing" constant="10" id="9pR-6B-NGW"/>
+                <constraint firstItem="V3M-0F-U2G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="AB5-RB-QuR"/>
+                <constraint firstAttribute="bottom" secondItem="TIg-ex-oXp" secondAttribute="bottom" id="ATS-yv-zJ4"/>
+                <constraint firstItem="oXm-lg-5hA" firstAttribute="leading" secondItem="V3M-0F-U2G" secondAttribute="trailing" constant="8" id="ETc-yR-b9H"/>
+                <constraint firstItem="TIg-ex-oXp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TaV-Sd-gH2"/>
+                <constraint firstItem="V3M-0F-U2G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="dSJ-DF-xRo"/>
+                <constraint firstItem="7XT-Zv-Xiw" firstAttribute="leading" secondItem="oXm-lg-5hA" secondAttribute="trailing" constant="13" id="e4W-zu-8MJ"/>
+                <constraint firstItem="oXm-lg-5hA" firstAttribute="centerY" secondItem="V3M-0F-U2G" secondAttribute="centerY" id="yTq-Ik-EjJ"/>
+                <constraint firstItem="7XT-Zv-Xiw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="zmQ-OK-zJb"/>
+            </constraints>
+            <connections>
+                <outlet property="closeIcon" destination="7XT-Zv-Xiw" id="cSw-0A-Gh6"/>
+                <outlet property="iconView" destination="V3M-0F-U2G" id="5QV-FU-d0c"/>
+                <outlet property="thumbVView" destination="TIg-ex-oXp" id="lZk-OC-Y1A"/>
+                <outlet property="titleLabell" destination="oXm-lg-5hA" id="RPR-tb-vha"/>
+            </connections>
+            <point key="canvasLocation" x="32.824427480916029" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="关闭" width="12" height="12"/>
+    </resources>
+</document>

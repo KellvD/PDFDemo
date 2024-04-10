@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="CDDistractionHeaderCell" customModule="Figma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="蓝色渐变卡片" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-UI-vj0">
+                        <rect key="frame" x="16" y="0.0" width="315" height="163"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restrictions 0 Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-Az-Ax2">
+                        <rect key="frame" x="32" y="16" width="148.33333333333334" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="09L-6O-UUP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc1-nG-Ngd">
+                        <rect key="frame" x="32" y="105" width="283" height="42"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="axn-Uq-LjM"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Restrictions settings"/>
+                        <connections>
+                            <action selector="onSettingAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HMC-NI-4Zu"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小手" translatesAutoresizingMaskIntoConstraints="NO" id="6Tr-zU-yyA">
+                        <rect key="frame" x="224" y="4" width="103" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="JCw-ex-xA2"/>
+                            <constraint firstAttribute="height" constant="103" id="P2d-iw-Ysu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y9-AK-5Bj">
+                        <rect key="frame" x="32" y="49" width="188" height="52"/>
+                        <string key="text">Restrict opening specific 
+apps and prevent excessive gaming</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Y9-AK-5Bj" firstAttribute="leading" secondItem="hhb-Az-Ax2" secondAttribute="leading" id="5mi-Od-1f0"/>
+                    <constraint firstItem="hhb-Az-Ax2" firstAttribute="leading" secondItem="bgs-UI-vj0" secondAttribute="leading" constant="16" id="A4i-ev-I1z"/>
+                    <constraint firstItem="hhb-Az-Ax2" firstAttribute="top" secondItem="bgs-UI-vj0" secondAttribute="top" constant="16" id="Bl7-lg-9HT"/>
+                    <constraint firstItem="Sc1-nG-Ngd" firstAttribute="top" secondItem="3Y9-AK-5Bj" secondAttribute="bottom" constant="4" id="Cdf-pS-Plb"/>
+                    <constraint firstAttribute="trailing" secondItem="bgs-UI-vj0" secondAttribute="trailing" constant="16" id="HSn-E3-EDI"/>
+                    <constraint firstAttribute="bottom" secondItem="bgs-UI-vj0" secondAttribute="bottom" id="Ufb-M8-8Ww"/>
+                    <constraint firstItem="bgs-UI-vj0" firstAttribute="bottom" secondItem="Sc1-nG-Ngd" secondAttribute="bottom" constant="16" id="WA3-o7-LnY"/>
+                    <constraint firstItem="Sc1-nG-Ngd" firstAttribute="leading" secondItem="bgs-UI-vj0" secondAttribute="leading" constant="16" id="Wr4-gy-Jgo"/>
+                    <constraint firstItem="bgs-UI-vj0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZAR-SK-qhL"/>
+                    <constraint firstItem="bgs-UI-vj0" firstAttribute="trailing" secondItem="6Tr-zU-yyA" secondAttribute="trailing" constant="4" id="Zz5-6k-LAu"/>
+                    <constraint firstItem="6Tr-zU-yyA" firstAttribute="leading" secondItem="3Y9-AK-5Bj" secondAttribute="trailing" constant="4" id="d1X-cZ-akV"/>
+                    <constraint firstItem="bgs-UI-vj0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nOR-4w-rm9"/>
+                    <constraint firstItem="3Y9-AK-5Bj" firstAttribute="top" secondItem="hhb-Az-Ax2" secondAttribute="bottom" constant="12" id="pdY-xl-Mn6"/>
+                    <constraint firstItem="6Tr-zU-yyA" firstAttribute="top" secondItem="bgs-UI-vj0" secondAttribute="top" constant="4" id="vEk-hk-HEs"/>
+                    <constraint firstItem="bgs-UI-vj0" firstAttribute="trailing" secondItem="Sc1-nG-Ngd" secondAttribute="trailing" constant="16" id="ywV-u4-Kh5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="settingBt" destination="Sc1-nG-Ngd" id="mzc-k3-4sY"/>
+                <outlet property="subTitleLabel" destination="3Y9-AK-5Bj" id="DXi-w8-yJN"/>
+                <outlet property="titleLabel" destination="hhb-Az-Ax2" id="d3o-PC-W5v"/>
+            </connections>
+            <point key="canvasLocation" x="-3.8167938931297707" y="15.845070422535212"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="小手" width="116.66666412353516" height="116.33333587646484"/>
+        <image name="蓝色渐变卡片" width="358" height="163"/>
+    </resources>
+</document>

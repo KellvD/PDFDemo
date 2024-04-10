@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B501406B2BB5A32D00C531CF /* CDPagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50140692BB5A32D00C531CF /* CDPagesViewCell.swift */; };
+		B516363B2B86343A00BA4F06 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B516363A2B86343A00BA4F06 /* StoreKit.framework */; };
+		B521F3AC2B58244300E261D3 /* CDAddMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F3AB2B58244300E261D3 /* CDAddMediaView.swift */; };
+		B521F3B02B59207C00E261D3 /* JXSegmentedMixcellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F3AF2B59207C00E261D3 /* JXSegmentedMixcellDataSource.swift */; };
+		B524E4082B52699600B8FECE /* CDEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524E4072B52699600B8FECE /* CDEmptyView.swift */; };
+		B524E49B2B5313D200B8FECE /* CDSegmentWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524E49A2B5313D200B8FECE /* CDSegmentWebViewController.swift */; };
+		B524E49D2B5314E700B8FECE /* CDWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524E49C2B5314E700B8FECE /* CDWebPageViewController.swift */; };
+		B524E49F2B53156700B8FECE /* CDCustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524E49E2B53156700B8FECE /* CDCustomSearchBar.swift */; };
+		B548AE682B5EB73F007C2728 /* PasscodeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548AE672B5EB73F007C2728 /* PasscodeLock.swift */; };
+		B548AE6A2B5EB757007C2728 /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548AE692B5EB757007C2728 /* PasscodeLockType.swift */; };
+		B548AE6C2B5EB7F2007C2728 /* PasscodeLockStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548AE6B2B5EB7F2007C2728 /* PasscodeLockStateType.swift */; };
+		B548AE6E2B5EBCE3007C2728 /* PasscodeSignPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548AE6D2B5EBCE3007C2728 /* PasscodeSignPlaceholderView.swift */; };
+		B548AE702B5FF857007C2728 /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548AE6F2B5FF857007C2728 /* GrowingTextView.swift */; };
+		B54F93402B6F808900E0A894 /* CDVipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54F933E2B6F808900E0A894 /* CDVipViewController.swift */; };
+		B5508C0D2B50C74B00DC99C1 /* CDHUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5508C062B50C74B00DC99C1 /* CDHUDManager.swift */; };
+		B5508C0F2B50C74B00DC99C1 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = B5508C092B50C74B00DC99C1 /* 37x-Checkmark.png */; };
+		B5508C102B50C74B00DC99C1 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5508C0A2B50C74B00DC99C1 /* 37x-Checkmark@2x.png */; };
+		B5508C112B50C74B00DC99C1 /* 37x-Error.png in Resources */ = {isa = PBXBuildFile; fileRef = B5508C0B2B50C74B00DC99C1 /* 37x-Error.png */; };
+		B5508C122B50C74B00DC99C1 /* 37x-Error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5508C0C2B50C74B00DC99C1 /* 37x-Error@2x.png */; };
+		B551924F2BB6EE6900AB6EF0 /* CDPageVipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B551924D2BB6EE6900AB6EF0 /* CDPageVipCell.swift */; };
+		B554B0302B649C3900851C03 /* CDPrivateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B554B02E2B649C3900851C03 /* CDPrivateViewController.swift */; };
+		B5555E2D2B600E3700EA400D /* CDLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5555E2B2B600E3700EA400D /* CDLockViewController.swift */; };
+		B5555E2E2B600E3700EA400D /* CDLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5555E2C2B600E3700EA400D /* CDLockViewController.xib */; };
+		B5555E302B60144F00EA400D /* PasscodeEnterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5555E2F2B60144F00EA400D /* PasscodeEnterState.swift */; };
+		B5555E322B62137200EA400D /* CDSegmentedTitleImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5555E312B62137200EA400D /* CDSegmentedTitleImageCell.swift */; };
+		B570C2EF2B975E2300384403 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B570C2EE2B975E2100384403 /* AdSupport.framework */; };
+		B58024CD2B593AF200331C2A /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B58024CC2B593AF100331C2A /* Montserrat-Regular.otf */; };
+		B58024D22B593C4600331C2A /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B58024D12B593C4600331C2A /* Montserrat-Medium.otf */; };
+		B58024D32B593EA500331C2A /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B58024CE2B593AFB00331C2A /* Montserrat-SemiBold.otf */; };
+		B58938E02B949D7B000D60C5 /* CDGuidedPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58938DF2B949D7B000D60C5 /* CDGuidedPaymentView.swift */; };
+		B58CE44D2B5C10D100CB3E52 /* CDCoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CE44C2B5C10D100CB3E52 /* CDCoveryView.swift */; };
+		B58CE44F2B5CC63100CB3E52 /* CDSqlManager+CDWebPageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CE44E2B5CC63100CB3E52 /* CDSqlManager+CDWebPageInfo.swift */; };
+		B58FB41E2B723C6B008592AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B58FB41D2B723C6B008592AA /* GoogleService-Info.plist */; };
+		B59247712B6E69930015050A /* CDAuthorizationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59247702B6E69920015050A /* CDAuthorizationTools.swift */; };
+		B59247732B6E738D0015050A /* String+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59247722B6E738D0015050A /* String+Custom.swift */; };
+		B59247752B6F36800015050A /* CDMediaSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59247742B6F36800015050A /* CDMediaSegmentView.swift */; };
+		B596968F2BA327E200255981 /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B596968C2BA327E100255981 /* FBSDKCoreKit.xcframework */; };
+		B59696902BA327E200255981 /* FBSDKCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B596968C2BA327E100255981 /* FBSDKCoreKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B59696912BA327E200255981 /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B596968D2BA327E100255981 /* FBAEMKit.xcframework */; };
+		B59696922BA327E200255981 /* FBAEMKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B596968D2BA327E100255981 /* FBAEMKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B59696932BA327E200255981 /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B596968E2BA327E100255981 /* FBSDKCoreKit_Basics.xcframework */; };
+		B59696942BA327E200255981 /* FBSDKCoreKit_Basics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B596968E2BA327E100255981 /* FBSDKCoreKit_Basics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5A4DFC52B823E0F0011C26E /* NKIAPManager+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4DFC42B823E0F0011C26E /* NKIAPManager+Alert.swift */; };
+		B5A5E90E2B5109E6004651AE /* CDMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5E90C2B5109E6004651AE /* CDMediaViewController.swift */; };
+		B5A5E9122B510DDE004651AE /* CDMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5E9102B510DDE004651AE /* CDMediaCell.swift */; };
+		B5A5E9132B510DDE004651AE /* CDMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A5E9112B510DDE004651AE /* CDMediaCell.xib */; };
+		B5A5E9192B515B20004651AE /* CDFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5E9182B515B20004651AE /* CDFilesViewController.swift */; };
+		B5A5E9242B51817B004651AE /* CDNewFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5E9222B51817B004651AE /* CDNewFileViewController.swift */; };
+		B5A5E9272B51A6B4004651AE /* CDCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A5E9262B51A6B4004651AE /* CDCustomNavigationBar.swift */; };
+		B5A5E9292B51A6DA004651AE /* CDCustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A5E9282B51A6DA004651AE /* CDCustomNavigationBar.xib */; };
+		B5AC98F52B71273F009CD83A /* CDDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC98F42B71273F009CD83A /* CDDevice+extension.swift */; };
+		B5AC98F72B71E3B0009CD83A /* NKIAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC98F62B71E3B0009CD83A /* NKIAPManager.swift */; };
+		B5AD51B92B523B98000C358C /* CDWebSiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AD51B72B523B98000C358C /* CDWebSiteCell.swift */; };
+		B5AD51BA2B523B98000C358C /* CDWebSiteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5AD51B82B523B98000C358C /* CDWebSiteCell.xib */; };
+		B5AD51BD2B523BAC000C358C /* CDWebPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AD51BB2B523BAC000C358C /* CDWebPageCell.swift */; };
+		B5AD51BE2B523BAC000C358C /* CDWebPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5AD51BC2B523BAC000C358C /* CDWebPageCell.xib */; };
+		B5AD51C12B5245E2000C358C /* CDMineHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AD51BF2B5245E2000C358C /* CDMineHeaderCell.swift */; };
+		B5AD51C22B5245E2000C358C /* CDMineHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5AD51C02B5245E2000C358C /* CDMineHeaderCell.xib */; };
+		B5AD51C52B5245FF000C358C /* CDMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AD51C32B5245FF000C358C /* CDMineCell.swift */; };
+		B5AD51C62B5245FF000C358C /* CDMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5AD51C42B5245FF000C358C /* CDMineCell.xib */; };
+		B5B94AE22B580706003A7A99 /* CDVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94ADF2B580705003A7A99 /* CDVideoPlayerView.swift */; };
+		B5B94AE32B580706003A7A99 /* CDVideoScrollerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94AE02B580705003A7A99 /* CDVideoScrollerCell.swift */; };
+		B5B94AE42B580706003A7A99 /* CDMediaScrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94AE12B580706003A7A99 /* CDMediaScrollerViewController.swift */; };
+		B5B94AE62B580B87003A7A99 /* CDImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94AE52B580B87003A7A99 /* CDImageScrollView.swift */; };
+		B5B94AEA2B581661003A7A99 /* CDImageScrollerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94AE92B581661003A7A99 /* CDImageScrollerCell.swift */; };
+		B5D3E8972B4EC934008B0DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D3E8962B4EC934008B0DEC /* Assets.xcassets */; };
+		B5D3E89A2B4EC934008B0DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D3E8982B4EC934008B0DEC /* LaunchScreen.storyboard */; };
+		B5D3E8AD2B4ECB76008B0DEC /* CDAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8A82B4ECB73008B0DEC /* CDAppDelegate.swift */; };
+		B5D3E8AE2B4ECB76008B0DEC /* CDBaseAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8A92B4ECB74008B0DEC /* CDBaseAllViewController.swift */; };
+		B5D3E8B02B4ECB76008B0DEC /* CDTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8AB2B4ECB75008B0DEC /* CDTabBarViewController.swift */; };
+		B5D3E8B12B4ECB76008B0DEC /* CDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8AC2B4ECB76008B0DEC /* CDNavigationController.swift */; };
+		B5D3E8B62B4ECBAE008B0DEC /* CDInlineTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8B22B4ECBAD008B0DEC /* CDInlineTools.swift */; };
+		B5D3E8B72B4ECBAF008B0DEC /* CDCustomDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8B32B4ECBAE008B0DEC /* CDCustomDefines.swift */; };
+		B5D3E8B82B4ECBAF008B0DEC /* CDSignalTon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8B42B4ECBAE008B0DEC /* CDSignalTon.swift */; };
+		B5D3E8C62B4ECBC4008B0DEC /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8BA2B4ECBC1008B0DEC /* String+Path.swift */; };
+		B5D3E8C72B4ECBC4008B0DEC /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8BB2B4ECBC2008B0DEC /* UIColor+extension.swift */; };
+		B5D3E8CA2B4ECBC4008B0DEC /* UIView+Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8BE2B4ECBC2008B0DEC /* UIView+Rect.swift */; };
+		B5D3E8CB2B4ECBC4008B0DEC /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8BF2B4ECBC3008B0DEC /* UIImage+extension.swift */; };
+		B5D3E8CC2B4ECBC4008B0DEC /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8C02B4ECBC3008B0DEC /* UIButton+extension.swift */; };
+		B5D3E8CD2B4ECBC4008B0DEC /* UIView+animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8C12B4ECBC3008B0DEC /* UIView+animation.swift */; };
+		B5D3E8CE2B4ECBC4008B0DEC /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8C22B4ECBC3008B0DEC /* UIImage+Gif.swift */; };
+		B5D3E8CF2B4ECBC4008B0DEC /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8C32B4ECBC4008B0DEC /* String+extension.swift */; };
+		B5D3E8D02B4ECBC4008B0DEC /* UIView+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8C42B4ECBC4008B0DEC /* UIView+Components.swift */; };
+		B5D3E8D12B4ECBC4008B0DEC /* UIFont+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8C52B4ECBC4008B0DEC /* UIFont+extension.swift */; };
+		B5D3E8E62B4ECBEF008B0DEC /* CDConfigFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8D62B4ECBEE008B0DEC /* CDConfigFile.swift */; };
+		B5D3E8E72B4ECBEF008B0DEC /* CDConfigBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8D72B4ECBEE008B0DEC /* CDConfigBean.swift */; };
+		B5D3E8E92B4ECBEF008B0DEC /* CDSqlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8DA2B4ECBEF008B0DEC /* CDSqlModel.swift */; };
+		B5D3E8EA2B4ECBEF008B0DEC /* CDSqlManager+CDSafeFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8DB2B4ECBEF008B0DEC /* CDSqlManager+CDSafeFileInfo.swift */; };
+		B5D3E8ED2B4ECBEF008B0DEC /* CDSqlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8DE2B4ECBEF008B0DEC /* CDSqlManager.swift */; };
+		B5D3E8EE2B4ECBEF008B0DEC /* CDSqlManager+CDUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8DF2B4ECBEF008B0DEC /* CDSqlManager+CDUserInfo.swift */; };
+		B5D3E8F12B4ECBEF008B0DEC /* CDSqlManager+CDSafeFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8E22B4ECBEF008B0DEC /* CDSqlManager+CDSafeFolder.swift */; };
+		B5D3E8F22B4ECBEF008B0DEC /* CDSqlDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8E32B4ECBEF008B0DEC /* CDSqlDefines.swift */; };
+		B5D3E8F92B4ECD94008B0DEC /* CDAblumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8F82B4ECD94008B0DEC /* CDAblumViewController.swift */; };
+		B5D3E8FB2B4ECDA1008B0DEC /* CDMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8FA2B4ECDA1008B0DEC /* CDMineViewController.swift */; };
+		B5D3E8FD2B4ECDC4008B0DEC /* CDWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8FC2B4ECDC4008B0DEC /* CDWebViewController.swift */; };
+		B5D3E8FF2B4ECE58008B0DEC /* CDPrintManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E8FE2B4ECE58008B0DEC /* CDPrintManager.swift */; };
+		B5D3E9092B50255D008B0DEC /* CDAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E9072B50255D008B0DEC /* CDAlbumCell.swift */; };
+		B5D3E90A2B50255D008B0DEC /* CDAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D3E9082B50255D008B0DEC /* CDAlbumCell.xib */; };
+		B5D3E9112B503898008B0DEC /* CDFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E90F2B503898008B0DEC /* CDFolderCell.swift */; };
+		B5D3E9142B5038F0008B0DEC /* CDFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E9132B5038F0008B0DEC /* CDFolderViewController.swift */; };
+		B5D3E9162B503A9F008B0DEC /* CDToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3E9152B503A9F008B0DEC /* CDToolBar.swift */; };
+		B5E47CA32BB54B8100D67C7F /* CDPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E47CA12BB54B8100D67C7F /* CDPageViewController.swift */; };
+		B5E47CA42BB54B8100D67C7F /* CDPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E47CA22BB54B8100D67C7F /* CDPageViewController.xib */; };
+		B5E8609B2B53A4950061ED16 /* CDFilesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8609A2B53A4950061ED16 /* CDFilesCell.swift */; };
+		B5E8609F2B5405760061ED16 /* CDMediaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E8609E2B5405760061ED16 /* CDMediaPickerViewController.swift */; };
+		B5E860A12B5405990061ED16 /* CDAblumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E860A02B5405990061ED16 /* CDAblumView.swift */; };
+		B5E860A82B5569F80061ED16 /* CDHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E860A62B5569F80061ED16 /* CDHistoryViewController.swift */; };
+		B5E860AC2B5572300061ED16 /* WebHistoryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E860AA2B5572300061ED16 /* WebHistoryHeader.swift */; };
+		B5E860AD2B5572300061ED16 /* WebHistoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E860AB2B5572300061ED16 /* WebHistoryHeader.xib */; };
+		B5E860B02B5572560061ED16 /* WebHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E860AE2B5572560061ED16 /* WebHistoryCell.swift */; };
+		B5E860B12B5572560061ED16 /* WebHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E860AF2B5572560061ED16 /* WebHistoryCell.xib */; };
+		B5E860B32B557ACE0061ED16 /* CDWebPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E860B22B557ACE0061ED16 /* CDWebPreviewViewController.swift */; };
+		B5E860B52B56C6030061ED16 /* CDPopMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E860B42B56C6030061ED16 /* CDPopMenuView.swift */; };
+		B5FF96822B94CA8B008D559D /* CDGuidedPaymentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FF96812B94CA8B008D559D /* CDGuidedPaymentView.xib */; };
+		D5898C1852071A51FB3BFD86 /* Pods_Figma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FA6DA8A9F97A4A51A95B8D /* Pods_Figma.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B59696952BA327E200255981 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B59696922BA327E200255981 /* FBAEMKit.xcframework in Embed Frameworks */,
+				B59696942BA327E200255981 /* FBSDKCoreKit_Basics.xcframework in Embed Frameworks */,
+				B59696902BA327E200255981 /* FBSDKCoreKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D4754CCC8A338316518D04F /* Pods-Figma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Figma.release.xcconfig"; path = "Target Support Files/Pods-Figma/Pods-Figma.release.xcconfig"; sourceTree = "<group>"; };
+		52FA6DA8A9F97A4A51A95B8D /* Pods_Figma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Figma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50140692BB5A32D00C531CF /* CDPagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPagesViewCell.swift; sourceTree = "<group>"; };
+		B516363A2B86343A00BA4F06 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B516363C2B8640F100BA4F06 /* Figma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figma.entitlements; sourceTree = "<group>"; };
+		B521F3AB2B58244300E261D3 /* CDAddMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAddMediaView.swift; sourceTree = "<group>"; };
+		B521F3AF2B59207C00E261D3 /* JXSegmentedMixcellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXSegmentedMixcellDataSource.swift; sourceTree = "<group>"; };
+		B524E4072B52699600B8FECE /* CDEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEmptyView.swift; sourceTree = "<group>"; };
+		B524E49A2B5313D200B8FECE /* CDSegmentWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSegmentWebViewController.swift; sourceTree = "<group>"; };
+		B524E49C2B5314E700B8FECE /* CDWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWebPageViewController.swift; sourceTree = "<group>"; };
+		B524E49E2B53156700B8FECE /* CDCustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCustomSearchBar.swift; sourceTree = "<group>"; };
+		B548AE672B5EB73F007C2728 /* PasscodeLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLock.swift; sourceTree = "<group>"; };
+		B548AE692B5EB757007C2728 /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
+		B548AE6B2B5EB7F2007C2728 /* PasscodeLockStateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockStateType.swift; sourceTree = "<group>"; };
+		B548AE6D2B5EBCE3007C2728 /* PasscodeSignPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSignPlaceholderView.swift; sourceTree = "<group>"; };
+		B548AE6F2B5FF857007C2728 /* GrowingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextView.swift; sourceTree = "<group>"; };
+		B54F933E2B6F808900E0A894 /* CDVipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDVipViewController.swift; sourceTree = "<group>"; };
+		B5508C062B50C74B00DC99C1 /* CDHUDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHUDManager.swift; sourceTree = "<group>"; };
+		B5508C092B50C74B00DC99C1 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		B5508C0A2B50C74B00DC99C1 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
+		B5508C0B2B50C74B00DC99C1 /* 37x-Error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Error.png"; sourceTree = "<group>"; };
+		B5508C0C2B50C74B00DC99C1 /* 37x-Error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Error@2x.png"; sourceTree = "<group>"; };
+		B551924D2BB6EE6900AB6EF0 /* CDPageVipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPageVipCell.swift; sourceTree = "<group>"; };
+		B554B02E2B649C3900851C03 /* CDPrivateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPrivateViewController.swift; sourceTree = "<group>"; };
+		B5555E2B2B600E3700EA400D /* CDLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDLockViewController.swift; sourceTree = "<group>"; };
+		B5555E2C2B600E3700EA400D /* CDLockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDLockViewController.xib; sourceTree = "<group>"; };
+		B5555E2F2B60144F00EA400D /* PasscodeEnterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeEnterState.swift; sourceTree = "<group>"; };
+		B5555E312B62137200EA400D /* CDSegmentedTitleImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSegmentedTitleImageCell.swift; sourceTree = "<group>"; };
+		B570C2EE2B975E2100384403 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B58024CC2B593AF100331C2A /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		B58024CE2B593AFB00331C2A /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		B58024D12B593C4600331C2A /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		B58938DF2B949D7B000D60C5 /* CDGuidedPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDGuidedPaymentView.swift; sourceTree = "<group>"; };
+		B58CE44C2B5C10D100CB3E52 /* CDCoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCoveryView.swift; sourceTree = "<group>"; };
+		B58CE44E2B5CC63100CB3E52 /* CDSqlManager+CDWebPageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDSqlManager+CDWebPageInfo.swift"; sourceTree = "<group>"; };
+		B58FB41D2B723C6B008592AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B59247702B6E69920015050A /* CDAuthorizationTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAuthorizationTools.swift; sourceTree = "<group>"; };
+		B59247722B6E738D0015050A /* String+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Custom.swift"; sourceTree = "<group>"; };
+		B59247742B6F36800015050A /* CDMediaSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMediaSegmentView.swift; sourceTree = "<group>"; };
+		B596968C2BA327E100255981 /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		B596968D2BA327E100255981 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBAEMKit.xcframework; sourceTree = "<group>"; };
+		B596968E2BA327E100255981 /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
+		B5A4DFC42B823E0F0011C26E /* NKIAPManager+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NKIAPManager+Alert.swift"; sourceTree = "<group>"; };
+		B5A5E90C2B5109E6004651AE /* CDMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMediaViewController.swift; sourceTree = "<group>"; };
+		B5A5E9102B510DDE004651AE /* CDMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMediaCell.swift; sourceTree = "<group>"; };
+		B5A5E9112B510DDE004651AE /* CDMediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDMediaCell.xib; sourceTree = "<group>"; };
+		B5A5E9182B515B20004651AE /* CDFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDFilesViewController.swift; sourceTree = "<group>"; };
+		B5A5E9222B51817B004651AE /* CDNewFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDNewFileViewController.swift; sourceTree = "<group>"; };
+		B5A5E9262B51A6B4004651AE /* CDCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCustomNavigationBar.swift; sourceTree = "<group>"; };
+		B5A5E9282B51A6DA004651AE /* CDCustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDCustomNavigationBar.xib; sourceTree = "<group>"; };
+		B5AC98F42B71273F009CD83A /* CDDevice+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDevice+extension.swift"; sourceTree = "<group>"; };
+		B5AC98F62B71E3B0009CD83A /* NKIAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKIAPManager.swift; sourceTree = "<group>"; };
+		B5AD51B72B523B98000C358C /* CDWebSiteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWebSiteCell.swift; sourceTree = "<group>"; };
+		B5AD51B82B523B98000C358C /* CDWebSiteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDWebSiteCell.xib; sourceTree = "<group>"; };
+		B5AD51BB2B523BAC000C358C /* CDWebPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWebPageCell.swift; sourceTree = "<group>"; };
+		B5AD51BC2B523BAC000C358C /* CDWebPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDWebPageCell.xib; sourceTree = "<group>"; };
+		B5AD51BF2B5245E2000C358C /* CDMineHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMineHeaderCell.swift; sourceTree = "<group>"; };
+		B5AD51C02B5245E2000C358C /* CDMineHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDMineHeaderCell.xib; sourceTree = "<group>"; };
+		B5AD51C32B5245FF000C358C /* CDMineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMineCell.swift; sourceTree = "<group>"; };
+		B5AD51C42B5245FF000C358C /* CDMineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDMineCell.xib; sourceTree = "<group>"; };
+		B5B94ADF2B580705003A7A99 /* CDVideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDVideoPlayerView.swift; sourceTree = "<group>"; };
+		B5B94AE02B580705003A7A99 /* CDVideoScrollerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDVideoScrollerCell.swift; sourceTree = "<group>"; };
+		B5B94AE12B580706003A7A99 /* CDMediaScrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMediaScrollerViewController.swift; sourceTree = "<group>"; };
+		B5B94AE52B580B87003A7A99 /* CDImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDImageScrollView.swift; sourceTree = "<group>"; };
+		B5B94AE92B581661003A7A99 /* CDImageScrollerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDImageScrollerCell.swift; sourceTree = "<group>"; };
+		B5D3E88A2B4EC932008B0DEC /* Hide photos & videos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hide photos & videos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D3E8962B4EC934008B0DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5D3E8992B4EC934008B0DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5D3E8A72B4ECB72008B0DEC /* Figma-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Figma-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5D3E8A82B4ECB73008B0DEC /* CDAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDAppDelegate.swift; sourceTree = "<group>"; };
+		B5D3E8A92B4ECB74008B0DEC /* CDBaseAllViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDBaseAllViewController.swift; sourceTree = "<group>"; };
+		B5D3E8AB2B4ECB75008B0DEC /* CDTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTabBarViewController.swift; sourceTree = "<group>"; };
+		B5D3E8AC2B4ECB76008B0DEC /* CDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDNavigationController.swift; sourceTree = "<group>"; };
+		B5D3E8B22B4ECBAD008B0DEC /* CDInlineTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDInlineTools.swift; sourceTree = "<group>"; };
+		B5D3E8B32B4ECBAE008B0DEC /* CDCustomDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDCustomDefines.swift; sourceTree = "<group>"; };
+		B5D3E8B42B4ECBAE008B0DEC /* CDSignalTon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSignalTon.swift; sourceTree = "<group>"; };
+		B5D3E8BA2B4ECBC1008B0DEC /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
+		B5D3E8BB2B4ECBC2008B0DEC /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		B5D3E8BE2B4ECBC2008B0DEC /* UIView+Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rect.swift"; sourceTree = "<group>"; };
+		B5D3E8BF2B4ECBC3008B0DEC /* UIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		B5D3E8C02B4ECBC3008B0DEC /* UIButton+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		B5D3E8C12B4ECBC3008B0DEC /* UIView+animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+animation.swift"; sourceTree = "<group>"; };
+		B5D3E8C22B4ECBC3008B0DEC /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		B5D3E8C32B4ECBC4008B0DEC /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		B5D3E8C42B4ECBC4008B0DEC /* UIView+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Components.swift"; sourceTree = "<group>"; };
+		B5D3E8C52B4ECBC4008B0DEC /* UIFont+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+extension.swift"; sourceTree = "<group>"; };
+		B5D3E8D62B4ECBEE008B0DEC /* CDConfigFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDConfigFile.swift; sourceTree = "<group>"; };
+		B5D3E8D72B4ECBEE008B0DEC /* CDConfigBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDConfigBean.swift; sourceTree = "<group>"; };
+		B5D3E8DA2B4ECBEF008B0DEC /* CDSqlModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSqlModel.swift; sourceTree = "<group>"; };
+		B5D3E8DB2B4ECBEF008B0DEC /* CDSqlManager+CDSafeFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDSqlManager+CDSafeFileInfo.swift"; sourceTree = "<group>"; };
+		B5D3E8DE2B4ECBEF008B0DEC /* CDSqlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSqlManager.swift; sourceTree = "<group>"; };
+		B5D3E8DF2B4ECBEF008B0DEC /* CDSqlManager+CDUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDSqlManager+CDUserInfo.swift"; sourceTree = "<group>"; };
+		B5D3E8E22B4ECBEF008B0DEC /* CDSqlManager+CDSafeFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CDSqlManager+CDSafeFolder.swift"; sourceTree = "<group>"; };
+		B5D3E8E32B4ECBEF008B0DEC /* CDSqlDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDSqlDefines.swift; sourceTree = "<group>"; };
+		B5D3E8F82B4ECD94008B0DEC /* CDAblumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAblumViewController.swift; sourceTree = "<group>"; };
+		B5D3E8FA2B4ECDA1008B0DEC /* CDMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMineViewController.swift; sourceTree = "<group>"; };
+		B5D3E8FC2B4ECDC4008B0DEC /* CDWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWebViewController.swift; sourceTree = "<group>"; };
+		B5D3E8FE2B4ECE58008B0DEC /* CDPrintManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDPrintManager.swift; sourceTree = "<group>"; };
+		B5D3E9072B50255D008B0DEC /* CDAlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAlbumCell.swift; sourceTree = "<group>"; };
+		B5D3E9082B50255D008B0DEC /* CDAlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDAlbumCell.xib; sourceTree = "<group>"; };
+		B5D3E90F2B503898008B0DEC /* CDFolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDFolderCell.swift; sourceTree = "<group>"; };
+		B5D3E9132B5038F0008B0DEC /* CDFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDFolderViewController.swift; sourceTree = "<group>"; };
+		B5D3E9152B503A9F008B0DEC /* CDToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDToolBar.swift; sourceTree = "<group>"; };
+		B5E47CA12BB54B8100D67C7F /* CDPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPageViewController.swift; sourceTree = "<group>"; };
+		B5E47CA22BB54B8100D67C7F /* CDPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDPageViewController.xib; sourceTree = "<group>"; };
+		B5E8609A2B53A4950061ED16 /* CDFilesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDFilesCell.swift; sourceTree = "<group>"; };
+		B5E8609E2B5405760061ED16 /* CDMediaPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMediaPickerViewController.swift; sourceTree = "<group>"; };
+		B5E860A02B5405990061ED16 /* CDAblumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAblumView.swift; sourceTree = "<group>"; };
+		B5E860A62B5569F80061ED16 /* CDHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHistoryViewController.swift; sourceTree = "<group>"; };
+		B5E860AA2B5572300061ED16 /* WebHistoryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHistoryHeader.swift; sourceTree = "<group>"; };
+		B5E860AB2B5572300061ED16 /* WebHistoryHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebHistoryHeader.xib; sourceTree = "<group>"; };
+		B5E860AE2B5572560061ED16 /* WebHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHistoryCell.swift; sourceTree = "<group>"; };
+		B5E860AF2B5572560061ED16 /* WebHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebHistoryCell.xib; sourceTree = "<group>"; };
+		B5E860B22B557ACE0061ED16 /* CDWebPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDWebPreviewViewController.swift; sourceTree = "<group>"; };
+		B5E860B42B56C6030061ED16 /* CDPopMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDPopMenuView.swift; sourceTree = "<group>"; };
+		B5FF96812B94CA8B008D559D /* CDGuidedPaymentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDGuidedPaymentView.xib; sourceTree = "<group>"; };
+		CF20099A1944D2C14832E34C /* Pods-Figma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Figma.debug.xcconfig"; path = "Target Support Files/Pods-Figma/Pods-Figma.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5D3E8872B4EC932008B0DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5898C1852071A51FB3BFD86 /* Pods_Figma.framework in Frameworks */,
+				B59696932BA327E200255981 /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				B570C2EF2B975E2300384403 /* AdSupport.framework in Frameworks */,
+				B596968F2BA327E200255981 /* FBSDKCoreKit.xcframework in Frameworks */,
+				B516363B2B86343A00BA4F06 /* StoreKit.framework in Frameworks */,
+				B59696912BA327E200255981 /* FBAEMKit.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7195F2BA3AD5A904EB380BCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B596968D2BA327E100255981 /* FBAEMKit.xcframework */,
+				B596968E2BA327E100255981 /* FBSDKCoreKit_Basics.xcframework */,
+				B596968C2BA327E100255981 /* FBSDKCoreKit.xcframework */,
+				B570C2EE2B975E2100384403 /* AdSupport.framework */,
+				B516363A2B86343A00BA4F06 /* StoreKit.framework */,
+				52FA6DA8A9F97A4A51A95B8D /* Pods_Figma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A7A942943A3BC4C7948F02D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF20099A1944D2C14832E34C /* Pods-Figma.debug.xcconfig */,
+				3D4754CCC8A338316518D04F /* Pods-Figma.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B548AE662B5EB717007C2728 /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				B548AE6D2B5EBCE3007C2728 /* PasscodeSignPlaceholderView.swift */,
+				B548AE6B2B5EB7F2007C2728 /* PasscodeLockStateType.swift */,
+				B548AE692B5EB757007C2728 /* PasscodeLockType.swift */,
+				B548AE672B5EB73F007C2728 /* PasscodeLock.swift */,
+				B5555E2F2B60144F00EA400D /* PasscodeEnterState.swift */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		B5508C052B50C74B00DC99C1 /* CDHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B5508C062B50C74B00DC99C1 /* CDHUDManager.swift */,
+				B5508C082B50C74B00DC99C1 /* image */,
+			);
+			path = CDHUD;
+			sourceTree = "<group>";
+		};
+		B5508C082B50C74B00DC99C1 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				B5508C092B50C74B00DC99C1 /* 37x-Checkmark.png */,
+				B5508C0A2B50C74B00DC99C1 /* 37x-Checkmark@2x.png */,
+				B5508C0B2B50C74B00DC99C1 /* 37x-Error.png */,
+				B5508C0C2B50C74B00DC99C1 /* 37x-Error@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		B59D7A4E2B62BCD100A43E52 /* seg */ = {
+			isa = PBXGroup;
+			children = (
+				B5555E312B62137200EA400D /* CDSegmentedTitleImageCell.swift */,
+				B524E49A2B5313D200B8FECE /* CDSegmentWebViewController.swift */,
+				B521F3AF2B59207C00E261D3 /* JXSegmentedMixcellDataSource.swift */,
+			);
+			path = seg;
+			sourceTree = "<group>";
+		};
+		B5D3E8812B4EC932008B0DEC = {
+			isa = PBXGroup;
+			children = (
+				B5D3E88C2B4EC932008B0DEC /* Figma */,
+				B5D3E88B2B4EC932008B0DEC /* Products */,
+				9A7A942943A3BC4C7948F02D /* Pods */,
+				7195F2BA3AD5A904EB380BCD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5D3E88B2B4EC932008B0DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3E88A2B4EC932008B0DEC /* Hide photos & videos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D3E88C2B4EC932008B0DEC /* Figma */ = {
+			isa = PBXGroup;
+			children = (
+				B516363C2B8640F100BA4F06 /* Figma.entitlements */,
+				B5D3E8A62B4ECABA008B0DEC /* ViewController */,
+				B5D3E8A52B4ECAB1008B0DEC /* ThirdParts */,
+				B5D3E8A42B4ECAA0008B0DEC /* Supporting Files */,
+				B5D3E8A32B4ECA8F008B0DEC /* PublicViews */,
+				B5D3E8A12B4ECA6B008B0DEC /* AppleLunch */,
+				B5D3E8A22B4ECA7C008B0DEC /* Extension */,
+			);
+			path = Figma;
+			sourceTree = "<group>";
+		};
+		B5D3E8A12B4ECA6B008B0DEC /* AppleLunch */ = {
+			isa = PBXGroup;
+			children = (
+				B5E47CA12BB54B8100D67C7F /* CDPageViewController.swift */,
+				B5E47CA22BB54B8100D67C7F /* CDPageViewController.xib */,
+				B5D3E8A82B4ECB73008B0DEC /* CDAppDelegate.swift */,
+				B5D3E8A92B4ECB74008B0DEC /* CDBaseAllViewController.swift */,
+				B5D3E8AC2B4ECB76008B0DEC /* CDNavigationController.swift */,
+				B5D3E8AB2B4ECB75008B0DEC /* CDTabBarViewController.swift */,
+				B5D3E8A72B4ECB72008B0DEC /* Figma-Bridging-Header.h */,
+				B50140692BB5A32D00C531CF /* CDPagesViewCell.swift */,
+				B551924D2BB6EE6900AB6EF0 /* CDPageVipCell.swift */,
+			);
+			path = AppleLunch;
+			sourceTree = "<group>";
+		};
+		B5D3E8A22B4ECA7C008B0DEC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3E8C32B4ECBC4008B0DEC /* String+extension.swift */,
+				B59247722B6E738D0015050A /* String+Custom.swift */,
+				B5D3E8BA2B4ECBC1008B0DEC /* String+Path.swift */,
+				B5D3E8C02B4ECBC3008B0DEC /* UIButton+extension.swift */,
+				B5D3E8BB2B4ECBC2008B0DEC /* UIColor+extension.swift */,
+				B5D3E8C52B4ECBC4008B0DEC /* UIFont+extension.swift */,
+				B5D3E8BF2B4ECBC3008B0DEC /* UIImage+extension.swift */,
+				B5D3E8C22B4ECBC3008B0DEC /* UIImage+Gif.swift */,
+				B5D3E8C12B4ECBC3008B0DEC /* UIView+animation.swift */,
+				B5D3E8C42B4ECBC4008B0DEC /* UIView+Components.swift */,
+				B5D3E8BE2B4ECBC2008B0DEC /* UIView+Rect.swift */,
+				B5AC98F42B71273F009CD83A /* CDDevice+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5D3E8A32B4ECA8F008B0DEC /* PublicViews */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC98F62B71E3B0009CD83A /* NKIAPManager.swift */,
+				B5D3E8B32B4ECBAE008B0DEC /* CDCustomDefines.swift */,
+				B5D3E8FE2B4ECE58008B0DEC /* CDPrintManager.swift */,
+				B5D3E8B22B4ECBAD008B0DEC /* CDInlineTools.swift */,
+				B5D3E8B42B4ECBAE008B0DEC /* CDSignalTon.swift */,
+				B59247702B6E69920015050A /* CDAuthorizationTools.swift */,
+				B5A4DFC42B823E0F0011C26E /* NKIAPManager+Alert.swift */,
+			);
+			path = PublicViews;
+			sourceTree = "<group>";
+		};
+		B5D3E8A42B4ECAA0008B0DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B58024D12B593C4600331C2A /* Montserrat-Medium.otf */,
+				B58024CE2B593AFB00331C2A /* Montserrat-SemiBold.otf */,
+				B58024CC2B593AF100331C2A /* Montserrat-Regular.otf */,
+				B58FB41D2B723C6B008592AA /* GoogleService-Info.plist */,
+				B5D3E8962B4EC934008B0DEC /* Assets.xcassets */,
+				B5D3E8982B4EC934008B0DEC /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5D3E8A52B4ECAB1008B0DEC /* ThirdParts */ = {
+			isa = PBXGroup;
+			children = (
+				B548AE662B5EB717007C2728 /* PasscodeLock */,
+				B5508C052B50C74B00DC99C1 /* CDHUD */,
+				B5D3E8D52B4ECBEE008B0DEC /* CDFileManager */,
+				B5D3E8D82B4ECBEF008B0DEC /* sqlManger */,
+			);
+			path = ThirdParts;
+			sourceTree = "<group>";
+		};
+		B5D3E8A62B4ECABA008B0DEC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3E9042B50113D008B0DEC /* Custom */,
+				B5D3E90D2B5037F3008B0DEC /* File */,
+				B5D3E8F52B4ECC7D008B0DEC /* Login */,
+				B5D3E8F32B4ECC7D008B0DEC /* Media */,
+				B5D3E8F72B4ECC7D008B0DEC /* Mine */,
+				B5D3E8F42B4ECC7D008B0DEC /* Web */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B5D3E8D52B4ECBEE008B0DEC /* CDFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3E8D62B4ECBEE008B0DEC /* CDConfigFile.swift */,
+				B5D3E8D72B4ECBEE008B0DEC /* CDConfigBean.swift */,
+			);
+			path = CDFileManager;
+			sourceTree = "<group>";
+		};
+		B5D3E8D82B4ECBEF008B0DEC /* sqlManger */ = {
+			isa = PBXGroup;
+			children = (
+				B5D3E8DA2B4ECBEF008B0DEC /* CDSqlModel.swift */,
+				B5D3E8DB2B4ECBEF008B0DEC /* CDSqlManager+CDSafeFileInfo.swift */,
+				B5D3E8DE2B4ECBEF008B0DEC /* CDSqlManager.swift */,
+				B58CE44E2B5CC63100CB3E52 /* CDSqlManager+CDWebPageInfo.swift */,
+				B5D3E8DF2B4ECBEF008B0DEC /* CDSqlManager+CDUserInfo.swift */,
+				B5D3E8E22B4ECBEF008B0DEC /* CDSqlManager+CDSafeFolder.swift */,
+				B5D3E8E32B4ECBEF008B0DEC /* CDSqlDefines.swift */,
+			);
+			path = sqlManger;
+			sourceTree = "<group>";
+		};
+		B5D3E8F32B4ECC7D008B0DEC /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B5E860A02B5405990061ED16 /* CDAblumView.swift */,
+				B5D3E8F82B4ECD94008B0DEC /* CDAblumViewController.swift */,
+				B5D3E9072B50255D008B0DEC /* CDAlbumCell.swift */,
+				B5D3E9082B50255D008B0DEC /* CDAlbumCell.xib */,
+				B5B94AE92B581661003A7A99 /* CDImageScrollerCell.swift */,
+				B5B94AE52B580B87003A7A99 /* CDImageScrollView.swift */,
+				B5A5E9102B510DDE004651AE /* CDMediaCell.swift */,
+				B5A5E9112B510DDE004651AE /* CDMediaCell.xib */,
+				B5E8609E2B5405760061ED16 /* CDMediaPickerViewController.swift */,
+				B5B94AE12B580706003A7A99 /* CDMediaScrollerViewController.swift */,
+				B5A5E90C2B5109E6004651AE /* CDMediaViewController.swift */,
+				B5B94ADF2B580705003A7A99 /* CDVideoPlayerView.swift */,
+				B5B94AE02B580705003A7A99 /* CDVideoScrollerCell.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		B5D3E8F42B4ECC7D008B0DEC /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				B59D7A4E2B62BCD100A43E52 /* seg */,
+				B58CE44C2B5C10D100CB3E52 /* CDCoveryView.swift */,
+				B5E860A62B5569F80061ED16 /* CDHistoryViewController.swift */,
+				B5AD51BB2B523BAC000C358C /* CDWebPageCell.swift */,
+				B5AD51BC2B523BAC000C358C /* CDWebPageCell.xib */,
+				B524E49C2B5314E700B8FECE /* CDWebPageViewController.swift */,
+				B5E860B22B557ACE0061ED16 /* CDWebPreviewViewController.swift */,
+				B5AD51B72B523B98000C358C /* CDWebSiteCell.swift */,
+				B5AD51B82B523B98000C358C /* CDWebSiteCell.xib */,
+				B5D3E8FC2B4ECDC4008B0DEC /* CDWebViewController.swift */,
+				B5E860AE2B5572560061ED16 /* WebHistoryCell.swift */,
+				B5E860AF2B5572560061ED16 /* WebHistoryCell.xib */,
+				B5E860AA2B5572300061ED16 /* WebHistoryHeader.swift */,
+				B5E860AB2B5572300061ED16 /* WebHistoryHeader.xib */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		B5D3E8F52B4ECC7D008B0DEC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B5555E2B2B600E3700EA400D /* CDLockViewController.swift */,
+				B5555E2C2B600E3700EA400D /* CDLockViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B5D3E8F72B4ECC7D008B0DEC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B5AD51C32B5245FF000C358C /* CDMineCell.swift */,
+				B5AD51C42B5245FF000C358C /* CDMineCell.xib */,
+				B5AD51BF2B5245E2000C358C /* CDMineHeaderCell.swift */,
+				B5AD51C02B5245E2000C358C /* CDMineHeaderCell.xib */,
+				B5D3E8FA2B4ECDA1008B0DEC /* CDMineViewController.swift */,
+				B554B02E2B649C3900851C03 /* CDPrivateViewController.swift */,
+				B54F933E2B6F808900E0A894 /* CDVipViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B5D3E9042B50113D008B0DEC /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B521F3AB2B58244300E261D3 /* CDAddMediaView.swift */,
+				B5A5E9262B51A6B4004651AE /* CDCustomNavigationBar.swift */,
+				B5A5E9282B51A6DA004651AE /* CDCustomNavigationBar.xib */,
+				B524E49E2B53156700B8FECE /* CDCustomSearchBar.swift */,
+				B524E4072B52699600B8FECE /* CDEmptyView.swift */,
+				B5E860B42B56C6030061ED16 /* CDPopMenuView.swift */,
+				B5D3E9152B503A9F008B0DEC /* CDToolBar.swift */,
+				B548AE6F2B5FF857007C2728 /* GrowingTextView.swift */,
+				B59247742B6F36800015050A /* CDMediaSegmentView.swift */,
+				B5FF96812B94CA8B008D559D /* CDGuidedPaymentView.xib */,
+				B58938DF2B949D7B000D60C5 /* CDGuidedPaymentView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		B5D3E90D2B5037F3008B0DEC /* File */ = {
+			isa = PBXGroup;
+			children = (
+				B5E8609A2B53A4950061ED16 /* CDFilesCell.swift */,
+				B5A5E9182B515B20004651AE /* CDFilesViewController.swift */,
+				B5D3E90F2B503898008B0DEC /* CDFolderCell.swift */,
+				B5D3E9132B5038F0008B0DEC /* CDFolderViewController.swift */,
+				B5A5E9222B51817B004651AE /* CDNewFileViewController.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5D3E8892B4EC932008B0DEC /* Figma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D3E89E2B4EC934008B0DEC /* Build configuration list for PBXNativeTarget "Figma" */;
+			buildPhases = (
+				257544E725C9C3197A909B97 /* [CP] Check Pods Manifest.lock */,
+				B5D3E8862B4EC932008B0DEC /* Sources */,
+				B5D3E8872B4EC932008B0DEC /* Frameworks */,
+				B5D3E8882B4EC932008B0DEC /* Resources */,
+				EE904973462FF19800880F12 /* [CP] Embed Pods Frameworks */,
+				B59696952BA327E200255981 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Figma;
+			productName = Figma;
+			productReference = B5D3E88A2B4EC932008B0DEC /* Hide photos & videos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5D3E8822B4EC932008B0DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B5D3E8892B4EC932008B0DEC = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = B5D3E8852B4EC932008B0DEC /* Build configuration list for PBXProject "Figma" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5D3E8812B4EC932008B0DEC;
+			productRefGroup = B5D3E88B2B4EC932008B0DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5D3E8892B4EC932008B0DEC /* Figma */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5D3E8882B4EC932008B0DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58024D32B593EA500331C2A /* Montserrat-SemiBold.otf in Resources */,
+				B5FF96822B94CA8B008D559D /* CDGuidedPaymentView.xib in Resources */,
+				B5AD51BE2B523BAC000C358C /* CDWebPageCell.xib in Resources */,
+				B5508C102B50C74B00DC99C1 /* 37x-Checkmark@2x.png in Resources */,
+				B5D3E90A2B50255D008B0DEC /* CDAlbumCell.xib in Resources */,
+				B5508C112B50C74B00DC99C1 /* 37x-Error.png in Resources */,
+				B5508C122B50C74B00DC99C1 /* 37x-Error@2x.png in Resources */,
+				B5AD51C22B5245E2000C358C /* CDMineHeaderCell.xib in Resources */,
+				B5508C0F2B50C74B00DC99C1 /* 37x-Checkmark.png in Resources */,
+				B5AD51C62B5245FF000C358C /* CDMineCell.xib in Resources */,
+				B5E860B12B5572560061ED16 /* WebHistoryCell.xib in Resources */,
+				B5555E2E2B600E3700EA400D /* CDLockViewController.xib in Resources */,
+				B5D3E89A2B4EC934008B0DEC /* LaunchScreen.storyboard in Resources */,
+				B58FB41E2B723C6B008592AA /* GoogleService-Info.plist in Resources */,
+				B5A5E9132B510DDE004651AE /* CDMediaCell.xib in Resources */,
+				B58024D22B593C4600331C2A /* Montserrat-Medium.otf in Resources */,
+				B58024CD2B593AF200331C2A /* Montserrat-Regular.otf in Resources */,
+				B5A5E9292B51A6DA004651AE /* CDCustomNavigationBar.xib in Resources */,
+				B5E860AD2B5572300061ED16 /* WebHistoryHeader.xib in Resources */,
+				B5E47CA42BB54B8100D67C7F /* CDPageViewController.xib in Resources */,
+				B5D3E8972B4EC934008B0DEC /* Assets.xcassets in Resources */,
+				B5AD51BA2B523B98000C358C /* CDWebSiteCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		257544E725C9C3197A909B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Figma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE904973462FF19800880F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Figma/Pods-Figma-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Figma/Pods-Figma-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Figma/Pods-Figma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5D3E8862B4EC932008B0DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A5E90E2B5109E6004651AE /* CDMediaViewController.swift in Sources */,
+				B5B94AE62B580B87003A7A99 /* CDImageScrollView.swift in Sources */,
+				B5D3E8D02B4ECBC4008B0DEC /* UIView+Components.swift in Sources */,
+				B5D3E8CB2B4ECBC4008B0DEC /* UIImage+extension.swift in Sources */,
+				B5AC98F52B71273F009CD83A /* CDDevice+extension.swift in Sources */,
+				B5D3E8B12B4ECB76008B0DEC /* CDNavigationController.swift in Sources */,
+				B5D3E8FB2B4ECDA1008B0DEC /* CDMineViewController.swift in Sources */,
+				B5D3E8D12B4ECBC4008B0DEC /* UIFont+extension.swift in Sources */,
+				B524E49F2B53156700B8FECE /* CDCustomSearchBar.swift in Sources */,
+				B5D3E8E92B4ECBEF008B0DEC /* CDSqlModel.swift in Sources */,
+				B501406B2BB5A32D00C531CF /* CDPagesViewCell.swift in Sources */,
+				B5D3E9092B50255D008B0DEC /* CDAlbumCell.swift in Sources */,
+				B5A5E9272B51A6B4004651AE /* CDCustomNavigationBar.swift in Sources */,
+				B5D3E9162B503A9F008B0DEC /* CDToolBar.swift in Sources */,
+				B5E860B52B56C6030061ED16 /* CDPopMenuView.swift in Sources */,
+				B548AE702B5FF857007C2728 /* GrowingTextView.swift in Sources */,
+				B59247732B6E738D0015050A /* String+Custom.swift in Sources */,
+				B5D3E9142B5038F0008B0DEC /* CDFolderViewController.swift in Sources */,
+				B5E860A82B5569F80061ED16 /* CDHistoryViewController.swift in Sources */,
+				B548AE6C2B5EB7F2007C2728 /* PasscodeLockStateType.swift in Sources */,
+				B5E860B32B557ACE0061ED16 /* CDWebPreviewViewController.swift in Sources */,
+				B5AD51C12B5245E2000C358C /* CDMineHeaderCell.swift in Sources */,
+				B5D3E8CC2B4ECBC4008B0DEC /* UIButton+extension.swift in Sources */,
+				B521F3B02B59207C00E261D3 /* JXSegmentedMixcellDataSource.swift in Sources */,
+				B5D3E8B82B4ECBAF008B0DEC /* CDSignalTon.swift in Sources */,
+				B524E4082B52699600B8FECE /* CDEmptyView.swift in Sources */,
+				B5555E2D2B600E3700EA400D /* CDLockViewController.swift in Sources */,
+				B5B94AE22B580706003A7A99 /* CDVideoPlayerView.swift in Sources */,
+				B5E8609B2B53A4950061ED16 /* CDFilesCell.swift in Sources */,
+				B5A5E9122B510DDE004651AE /* CDMediaCell.swift in Sources */,
+				B5E860A12B5405990061ED16 /* CDAblumView.swift in Sources */,
+				B548AE6E2B5EBCE3007C2728 /* PasscodeSignPlaceholderView.swift in Sources */,
+				B5E860AC2B5572300061ED16 /* WebHistoryHeader.swift in Sources */,
+				B554B0302B649C3900851C03 /* CDPrivateViewController.swift in Sources */,
+				B58CE44D2B5C10D100CB3E52 /* CDCoveryView.swift in Sources */,
+				B5D3E8E62B4ECBEF008B0DEC /* CDConfigFile.swift in Sources */,
+				B5D3E8B02B4ECB76008B0DEC /* CDTabBarViewController.swift in Sources */,
+				B5D3E8CD2B4ECBC4008B0DEC /* UIView+animation.swift in Sources */,
+				B5D3E8AE2B4ECB76008B0DEC /* CDBaseAllViewController.swift in Sources */,
+				B5D3E8AD2B4ECB76008B0DEC /* CDAppDelegate.swift in Sources */,
+				B59247752B6F36800015050A /* CDMediaSegmentView.swift in Sources */,
+				B551924F2BB6EE6900AB6EF0 /* CDPageVipCell.swift in Sources */,
+				B5A4DFC52B823E0F0011C26E /* NKIAPManager+Alert.swift in Sources */,
+				B548AE6A2B5EB757007C2728 /* PasscodeLockType.swift in Sources */,
+				B5D3E8B62B4ECBAE008B0DEC /* CDInlineTools.swift in Sources */,
+				B5D3E8F22B4ECBEF008B0DEC /* CDSqlDefines.swift in Sources */,
+				B5E47CA32BB54B8100D67C7F /* CDPageViewController.swift in Sources */,
+				B5B94AE42B580706003A7A99 /* CDMediaScrollerViewController.swift in Sources */,
+				B5D3E8ED2B4ECBEF008B0DEC /* CDSqlManager.swift in Sources */,
+				B524E49B2B5313D200B8FECE /* CDSegmentWebViewController.swift in Sources */,
+				B5E860B02B5572560061ED16 /* WebHistoryCell.swift in Sources */,
+				B5D3E8FF2B4ECE58008B0DEC /* CDPrintManager.swift in Sources */,
+				B5AD51BD2B523BAC000C358C /* CDWebPageCell.swift in Sources */,
+				B5AD51B92B523B98000C358C /* CDWebSiteCell.swift in Sources */,
+				B5D3E8E72B4ECBEF008B0DEC /* CDConfigBean.swift in Sources */,
+				B5D3E8CE2B4ECBC4008B0DEC /* UIImage+Gif.swift in Sources */,
+				B5D3E8C72B4ECBC4008B0DEC /* UIColor+extension.swift in Sources */,
+				B5B94AEA2B581661003A7A99 /* CDImageScrollerCell.swift in Sources */,
+				B5D3E8F92B4ECD94008B0DEC /* CDAblumViewController.swift in Sources */,
+				B5D3E8CA2B4ECBC4008B0DEC /* UIView+Rect.swift in Sources */,
+				B58938E02B949D7B000D60C5 /* CDGuidedPaymentView.swift in Sources */,
+				B59247712B6E69930015050A /* CDAuthorizationTools.swift in Sources */,
+				B5D3E8FD2B4ECDC4008B0DEC /* CDWebViewController.swift in Sources */,
+				B54F93402B6F808900E0A894 /* CDVipViewController.swift in Sources */,
+				B5A5E9242B51817B004651AE /* CDNewFileViewController.swift in Sources */,
+				B5D3E9112B503898008B0DEC /* CDFolderCell.swift in Sources */,
+				B5555E322B62137200EA400D /* CDSegmentedTitleImageCell.swift in Sources */,
+				B5555E302B60144F00EA400D /* PasscodeEnterState.swift in Sources */,
+				B5AC98F72B71E3B0009CD83A /* NKIAPManager.swift in Sources */,
+				B548AE682B5EB73F007C2728 /* PasscodeLock.swift in Sources */,
+				B5D3E8B72B4ECBAF008B0DEC /* CDCustomDefines.swift in Sources */,
+				B5D3E8C62B4ECBC4008B0DEC /* String+Path.swift in Sources */,
+				B5D3E8EE2B4ECBEF008B0DEC /* CDSqlManager+CDUserInfo.swift in Sources */,
+				B5D3E8EA2B4ECBEF008B0DEC /* CDSqlManager+CDSafeFileInfo.swift in Sources */,
+				B5AD51C52B5245FF000C358C /* CDMineCell.swift in Sources */,
+				B5D3E8CF2B4ECBC4008B0DEC /* String+extension.swift in Sources */,
+				B5508C0D2B50C74B00DC99C1 /* CDHUDManager.swift in Sources */,
+				B5A5E9192B515B20004651AE /* CDFilesViewController.swift in Sources */,
+				B5D3E8F12B4ECBEF008B0DEC /* CDSqlManager+CDSafeFolder.swift in Sources */,
+				B58CE44F2B5CC63100CB3E52 /* CDSqlManager+CDWebPageInfo.swift in Sources */,
+				B5E8609F2B5405760061ED16 /* CDMediaPickerViewController.swift in Sources */,
+				B521F3AC2B58244300E261D3 /* CDAddMediaView.swift in Sources */,
+				B524E49D2B5314E700B8FECE /* CDWebPageViewController.swift in Sources */,
+				B5B94AE32B580706003A7A99 /* CDVideoScrollerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5D3E8982B4EC934008B0DEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D3E8992B4EC934008B0DEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5D3E89C2B4EC934008B0DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5D3E89D2B4EC934008B0DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5D3E89F2B4EC934008B0DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF20099A1944D2C14832E34C /* Pods-Figma.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Figma/Figma.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CB9C95Z724;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Figma/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hide photos & videos needs camera access to takephotos/videos and store them into Hide photos & videos\n";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hide photos & videos needs to access Face ID to unlock your vault";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hide photos & videos needs to access microphone torecord videos with sounds and storethem into Hide photos & videos\n";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hide photos & videos needs access to yourphoto library in order to import photosand videos to your Hide photos & videos.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver\npersonalized ads to you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenying.securephoto;
+				PRODUCT_NAME = "Hide photos & videos";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Figma/AppleLunch/Figma-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B5D3E8A02B4EC934008B0DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D4754CCC8A338316518D04F /* Pods-Figma.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Figma/Figma.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CB9C95Z724;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Figma/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hide photos & videos needs camera access to takephotos/videos and store them into Hide photos & videos\n";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Hide photos & videos needs to access Face ID to unlock your vault";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Hide photos & videos needs to access microphone torecord videos with sounds and storethem into Hide photos & videos\n";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Hide photos & videos needs access to yourphoto library in order to import photosand videos to your Hide photos & videos.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver\npersonalized ads to you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenying.securephoto;
+				PRODUCT_NAME = "Hide photos & videos";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = dev;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Figma/AppleLunch/Figma-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5D3E8852B4EC932008B0DEC /* Build configuration list for PBXProject "Figma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D3E89C2B4EC934008B0DEC /* Debug */,
+				B5D3E89D2B4EC934008B0DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D3E89E2B4EC934008B0DEC /* Build configuration list for PBXNativeTarget "Figma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D3E89F2B4EC934008B0DEC /* Debug */,
+				B5D3E8A02B4EC934008B0DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5D3E8822B4EC932008B0DEC /* Project object */;
+}
