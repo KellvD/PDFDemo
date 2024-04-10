@@ -79,6 +79,7 @@
 		B55380F12BAB119100D37A41 /* CDNewFolderNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55380F02BAB119100D37A41 /* CDNewFolderNib.xib */; };
 		B55380F32BAB11FD00D37A41 /* CDRateAlertNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55380F22BAB11FD00D37A41 /* CDRateAlertNib.xib */; };
 		B55380F52BAB120F00D37A41 /* CDRateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55380F42BAB120F00D37A41 /* CDRateAlert.swift */; };
+		B55E79282BC5755C009528DA /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = B55E79272BC5755C009528DA /* PythonKit */; };
 		B5B178432BB46BB6004AF704 /* CDCameraManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B178422BB46BB6004AF704 /* CDCameraManger.swift */; };
 		B5B178462BB472CA004AF704 /* CDPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B178442BB472CA004AF704 /* CDPreviewViewController.swift */; };
 		B5B178472BB472CA004AF704 /* CDPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B178452BB472CA004AF704 /* CDPreviewViewController.xib */; };
@@ -167,6 +168,7 @@
 		B55380F02BAB119100D37A41 /* CDNewFolderNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDNewFolderNib.xib; sourceTree = "<group>"; };
 		B55380F22BAB11FD00D37A41 /* CDRateAlertNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDRateAlertNib.xib; sourceTree = "<group>"; };
 		B55380F42BAB120F00D37A41 /* CDRateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRateAlert.swift; sourceTree = "<group>"; };
+		B55E792A2BC57E6C009528DA /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		B5B178422BB46BB6004AF704 /* CDCameraManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDCameraManger.swift; sourceTree = "<group>"; };
 		B5B178442BB472CA004AF704 /* CDPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPreviewViewController.swift; sourceTree = "<group>"; };
 		B5B178452BB472CA004AF704 /* CDPreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CDPreviewViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			files = (
 				B50FA12A2BA805E900827344 /* PDFKit.framework in Frameworks */,
 				6E4BEE2551D98EBDA2447FB5 /* Pods_PDF.framework in Frameworks */,
+				B55E79282BC5755C009528DA /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +319,7 @@
 				B50FA1122BA7E48A00827344 /* UIView+animation.swift */,
 				B50FA10D2BA7E48800827344 /* UIView+Components.swift */,
 				B50FA1182BA7E48B00827344 /* UIView+Rect.swift */,
+				B55E792A2BC57E6C009528DA /* Header.h */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -455,6 +459,9 @@
 			dependencies = (
 			);
 			name = PDF;
+			packageProductDependencies = (
+				B55E79272BC5755C009528DA /* PythonKit */,
+			);
 			productName = PDF;
 			productReference = B50FA0B32BA7CD8500827344 /* PDF.app */;
 			productType = "com.apple.product-type.application";
@@ -483,6 +490,10 @@
 				Base,
 			);
 			mainGroup = B50FA0AA2BA7CD8500827344;
+			packageReferences = (
+				B55E79262BC5755C009528DA /* XCRemoteSwiftPackageReference "PythonKit" */,
+				B55E79292BC5764B009528DA /* XCRemoteSwiftPackageReference "Python-iOS" */,
+			);
 			productRefGroup = B50FA0B42BA7CD8500827344 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -833,6 +844,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B55E79262BC5755C009528DA /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B55E79292BC5764B009528DA /* XCRemoteSwiftPackageReference "Python-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/Python-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.59932;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B55E79272BC5755C009528DA /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B55E79262BC5755C009528DA /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B50FA0AB2BA7CD8500827344 /* Project object */;
 }

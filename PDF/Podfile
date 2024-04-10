@@ -17,8 +17,8 @@ target 'PDF' do
   	#pod 'FirebaseAnalytics'
   	pod 'Google-Mobile-Ads-SDK'
 #    pod 'SwiftOCR'
-    pod 'Docx'
-    pod 'Tabular'
+    pod 'DocX-Swift'
+    pod 'SwiftXLSX'
     pod 'SignatureView'
 
 end
